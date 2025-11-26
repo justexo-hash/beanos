@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beanos</title>
+    <link rel="icon" type="image/webp" href="./assets/Beanos.webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video
+      class="side-video side-video-left"
+      src="./assets/left.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+      aria-hidden="true"
+    ></video>
+    <video
+      class="side-video side-video-right"
+      src="./assets/right.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+      aria-hidden="true"
+    ></video>
+
+    <main class="hud" aria-live="polite">
+      <section class="contract-card">
+        <p class="eyebrow">Contract Address</p>
+        <div class="address-row">
+          <code id="contract-address" class="address-text">
+            BEANOS WORLD ORDER
+          </code>
+          <button
+            id="copy-btn"
+            class="copy-btn"
+            type="button"
+            data-address="0xBEaN05F00D000000000000000000000000000000"
+          >
+            Copy
+          </button>
+        </div>
+      </section>
+
+      <div class="social-row" aria-label="Social links">
+        <a
+          href="https://dexscreener.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="Dexscreener"
+        >
+          <img src="./assets/dexscreenerwhite.png" alt="Dexscreener icon" />
+        </a>
+        <a
+          href="https://nad.fun"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="NadFun"
+        >
+          <img src="./assets/nadfun.ico" alt="NadFun icon" />
+        </a>
+        <a
+          href="https://x.com/i/communities/1993779024661717219"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="X (Twitter)"
+        >
+          <img src="./assets/x.png" alt="X (Twitter) icon" />
+        </a>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
